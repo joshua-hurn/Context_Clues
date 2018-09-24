@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         var textnode = document.createTextNode("Accusation" + " " + i);
         h3.appendChild(textnode);
         body.appendChild(h3)
-        h3.addEventListener('click', function () {
-            alert('Accusation' + i + ': ' + 'I accuse ' + friends[i] + ' with the ' + weapons[i] + ' in the ' + locations[i] + '!')
-        })
     }
 });
+
+function myFunc () {
+    return h3.addEventListener('click', function () {
+        alert('Accusation' + i + ': ' + 'I accuse ' + friends[i] + ' with the ' + weapons[i] + ' in the ' + locations[i] + '!')
+    }
+}
